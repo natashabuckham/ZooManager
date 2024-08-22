@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\w8d4_ZooManager.props" />
+</Project>

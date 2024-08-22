@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\w8d4_ZooManager.props" />
+</Project>
