@@ -1,0 +1,71 @@
+// using Microsoft.AspNetCore.Builder;
+// using Microsoft.AspNetCore.Hosting;
+// using Microsoft.EntityFrameworkCore;
+// using Microsoft.Extensions.Configuration;
+// using Microsoft.Extensions.DependencyInjection;
+// using Microsoft.Extensions.Hosting;
+// using Microsoft.Extensions.Logging;
+// using w8d4_ZooManager.Models.Database;
+
+// namespace w8d4_ZooManager
+// {
+//     public class Startup
+//     {
+//         public Startup(IConfiguration configuration)
+//         {
+//             Configuration = configuration;
+//         }
+
+//         public IConfiguration Configuration { get; }
+
+//         private static string CORS_POLICY_NAME = "_zoomanagerCorsPolicy";
+
+//         // This method gets called by the runtime. Use this method to add services to the container.
+//         public void ConfigureServices(IServiceCollection services)
+//         {
+//             services.AddDbContext<ZooManagerDbContext>(options =>
+//             {
+//                 options.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()));
+//                 options.UseSqlite("Data Source=zoomanager.db");
+//             });
+
+//             services.AddCors(options =>
+//             {
+//                 options.AddPolicy(CORS_POLICY_NAME, builder =>
+//                     builder
+//                         .WithOrigins("http://localhost:3000")
+//                         .AllowAnyMethod()
+//                         .AllowAnyHeader());
+//             });
+
+//             services.AddControllers();
+
+//             // services.AddTransient<IInteractionsRepo, InteractionsRepo>();
+//             // services.AddTransient<IPostsRepo, PostsRepo>();
+//             // services.AddTransient<IUsersRepo, UsersRepo>();
+
+//         }
+
+//         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+//         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+//         {
+//             if (env.IsDevelopment())
+//             {
+//                 app.UseDeveloperExceptionPage();
+//             }
+//             else
+//             {
+//                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+//                 app.UseHsts();
+//             }
+
+//             app.UseHttpsRedirection();
+
+//             app.UseRouting();
+
+//             app.UseCors(CORS_POLICY_NAME);
+
+//             app.UseEndpoints(endpoints => endpoints.MapControllers());
+//         }
+//     }
+// }
