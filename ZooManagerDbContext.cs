@@ -12,4 +12,5 @@ public class ZooManagerDbContext : DbContext
     }
 
     public DbSet<Animal> Animals { get; set; } = null!;
+    public DbSet<AnimalType> AnimalTypes { get; set; }
 }

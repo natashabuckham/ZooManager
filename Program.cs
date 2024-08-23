@@ -1,6 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using ZooManager;
 using Microsoft.OpenApi.Models;
+using System.Linq;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using ZooManager.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,7 +62,16 @@ static void CreateDbIfNotExists(IHost host)
     var context = services.GetRequiredService<ZooManagerDbContext>();
     context.Database.EnsureCreated();
 
-    context.SaveChanges();
+    if (!context.AnimalTypes.Any())
+    {
+        var animalTypes = SampleAnimalTypes.GetAnimalTypes();
+        context.AnimalTypes.AddRange(animalTypes);
+        context.SaveChanges();
+
+        var animals = SampleAnimals.GetAnimals();
+        context.Animals.AddRange(animals);
+        context.SaveChanges();
+    }
 }
 
 CreateDbIfNotExists(app);

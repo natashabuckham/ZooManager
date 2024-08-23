@@ -1659,19 +1659,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ClaGia\\.nuget\\packages\\": {}
+    "C:\\Users\\NatBuc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Training\\w8d4_ZooManager\\ZooManager\\ZooManager.csproj",
+      "projectUniqueName": "C:\\TechSwitch\\week-8\\ZooManager\\ZooManager.csproj",
       "projectName": "ZooManager",
-      "projectPath": "C:\\Training\\w8d4_ZooManager\\ZooManager\\ZooManager.csproj",
-      "packagesPath": "C:\\Users\\ClaGia\\.nuget\\packages\\",
-      "outputPath": "C:\\Training\\w8d4_ZooManager\\ZooManager\\obj\\",
+      "projectPath": "C:\\TechSwitch\\week-8\\ZooManager\\ZooManager.csproj",
+      "packagesPath": "C:\\Users\\NatBuc\\.nuget\\packages\\",
+      "outputPath": "C:\\TechSwitch\\week-8\\ZooManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ClaGia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\NatBuc\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
