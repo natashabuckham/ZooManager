@@ -14,7 +14,7 @@ Install the dependencies:
 - dotnet add package Swashbuckle.AspNetCore
 - dotnet add package Microsoft.AspNetCore.OpenApi (this should install together with Swashbuckle)
 
-Trust the HTTPS development certificate by running the following command: dotnet dev-certs https --trust 
+Trust the HTTPS development certificate by running the following command: `dotnet dev-certs https --trust` 
 Select "Yes" in the window that pops up after this command.
 
 Use command dotnet run to run the application. 
