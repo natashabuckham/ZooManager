@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using w8d4_ZooManager.Models.Database;
+using ZooManager.Models.Database;
 
-namespace w8d4_ZooManager;
+namespace ZooManager;
 // namespace TodoApi.Models;
 
 public class ZooManagerDbContext : DbContext

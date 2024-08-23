@@ -1696,9 +1696,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Training\\w8d4_ZooManager\\ZooManager\\w8d4_ZooManager.csproj",
-      "projectName": "w8d4_ZooManager",
-      "projectPath": "C:\\Training\\w8d4_ZooManager\\ZooManager\\w8d4_ZooManager.csproj",
+      "projectUniqueName": "C:\\Training\\w8d4_ZooManager\\ZooManager\\ZooManager.csproj",
+      "projectName": "ZooManager",
+      "projectPath": "C:\\Training\\w8d4_ZooManager\\ZooManager\\ZooManager.csproj",
       "packagesPath": "C:\\Users\\ClaGia\\.nuget\\packages\\",
       "outputPath": "C:\\Training\\w8d4_ZooManager\\ZooManager\\obj\\",
       "projectStyle": "PackageReference",

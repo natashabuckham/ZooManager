@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace w8d4_ZooManager.Models.Database
+namespace ZooManager.Models.Database
 {
     public class Animal
     {

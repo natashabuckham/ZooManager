@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using w8d4_ZooManager;
+using ZooManager;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);

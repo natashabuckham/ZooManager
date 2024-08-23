@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qGefbRaEQXU=",
+  "dgSpecHash": "eu5Jv5RdKW4=",
   "success": true,
-  "projectFilePath": "C:\\Training\\w8d4_ZooManager\\ZooManager\\w8d4_ZooManager.csproj",
+  "projectFilePath": "C:\\Training\\w8d4_ZooManager\\ZooManager\\ZooManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ClaGia\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.8\\microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
     "C:\\Users\\ClaGia\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.8\\microsoft.data.sqlite.core.8.0.8.nupkg.sha512",
