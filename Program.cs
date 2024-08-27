@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ZooManager.Data;
+using ZooManager.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,10 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 builder.Services.AddControllers();
+
+builder.Services.AddTransient<IAnimalsRepo, AnimalsRepo>();
+builder.Services.AddTransient<IAnimalTypesRepo, AnimalTypesRepo>();
+
 builder.Services.AddDbContext<ZooManagerDbContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("ZooManagerDbContext"));
@@ -52,7 +57,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/", () => "Hello, World!");
+app.MapControllers();
 
 static void CreateDbIfNotExists(IHost host)
 {
