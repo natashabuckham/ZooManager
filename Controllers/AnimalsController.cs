@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ZooManager.Models.Request;
 using ZooManager.Models.Response;
 using ZooManager.Repositories;
+using ZooManager.Models.Request;
 
 namespace ZooManager.Controllers
 {
@@ -15,6 +16,14 @@ namespace ZooManager.Controllers
         public AnimalsController(IAnimalsRepo animals)
         {
             _animals = animals;
+        }
+
+        [HttpGet("")]
+        public ActionResult<AnimalListResponse> Search([FromQuery] AnimalSearchRequest searchRequest)
+        {
+            var animals = _animals.Search(searchRequest);
+            var animalCount = _animals.Count(searchRequest);
+            return AnimalListResponse.Create(searchRequest, animals, animalCount);
         }
 
         [HttpGet("{id}")]
